@@ -1,40 +1,46 @@
-<!DOCTYPE html>
-<html>
-
-<head>Study Buddy - Contact
-    <link rel = "stylesheet" href = "styles.css">
-</head>
-
- <header class = "menu">
-  
-  <ul>
-    <li><a hyref = "index.html">Home</a></li>
-    <li><a hyref = "tasks.html">Tasks</a></li>
-    <li><a hyref = "contact.html">Contact Us</a></li>
-    <li><a class="new_tab" hyref = "https//epcc.edu">EPCC</a></li>
-  </ul>
-
-</header>
-
-<body>
-
-  <label for = "contacts">Contact Us</label>
-  Tell us what you need help with and we will reach back to your email ASAP.
-  <form>
-    <label for = "name">Name:</label>
-    <input type = "text">
-
-    <label for = "email">Email:</label>
-    <input type = "email">
-
-    <label for = "paragraph">How can we help?</label>
-    <textarea name="input" placeholder = "Type here..." rows="10" cols="40"></textarea>
-  </form>
-
-  <button id = "button">Submit</button>
-
-</body>
-
-<script href = "script.js"></script>
-
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Study Buddy – Contact</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tasks.html">Study Tasks</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="https://developer.mozilla.org" target="_blank"
+                            >Docs</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Contact Us</h1>
+            <p>
+                Send a note with your questions or tutoring needs and we will
+                reply soon.
+            </p>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required />
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                ></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
